@@ -1,4 +1,4 @@
-# sixsix
+# demo
 
 ## Project setup
 ```
