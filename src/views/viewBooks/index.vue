@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-03-31 23:06:11
+ * @LastEditTime: 2020-04-01 00:10:06
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -98,13 +98,13 @@ export default {
           id: 1,
           name: "",
           page: 13,
-          desc: "道可道，非常道，名可名，非常名"
+          desc: ""
         },
         {
           id: 2,
-          name: "山穷水尽疑无路",
+          name: "",
           page: 29,
-          desc: "无名，天地之始；有名，万物之母。"
+          desc: ""
         }
       ]
     };
