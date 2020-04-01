@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-01 00:10:06
+ * @LastEditTime: 2020-04-01 21:19:13
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -38,9 +38,9 @@
               <el-menu-item index="1-4">选项4</el-menu-item>
             </el-menu-item-group>
             <!-- <el-submenu index="1-4">
-                                <template slot="title">选项4</template>
-                                <el-menu-item index="1-4-1">选项1</el-menu-item>
-                </el-submenu>-->
+                <template slot="title">选项4</template>
+                <el-menu-item index="1-4-1">选项1</el-menu-item>
+            </el-submenu>-->
           </el-submenu>
           <el-menu-item index="2">
             <i class="el-icon-menu"></i>
@@ -56,17 +56,8 @@
           <!-- border 边框 -->
           <!-- stripe 带斑马纹 -->
           <el-table :data="tableData" stripe border style="width: 100%;">
-            <el-table-column
-              prop="name"
-              label="书名"
-              width="200"
-              show-overflow-tooltip
-            ></el-table-column>
-            <el-table-column
-              prop="page"
-              label="页数"
-              width="60"
-            ></el-table-column>
+            <el-table-column prop="name" label="书名" width="200" show-overflow-tooltip></el-table-column>
+            <el-table-column prop="page" label="页数" width="60"></el-table-column>
             <el-table-column prop="desc" label="描述"></el-table-column>
           </el-table>
         </div>
