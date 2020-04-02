@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-01 21:19:13
+ * @LastEditTime: 2020-04-02 22:18:13
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -32,20 +32,10 @@
               <span>书籍</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
-              <el-menu-item index="1-3">选项3</el-menu-item>
-              <el-menu-item index="1-4">选项4</el-menu-item>
+              <el-menu-item index="1-1">古典文学</el-menu-item>
+              <el-menu-item index="1-1">武侠小说</el-menu-item>
             </el-menu-item-group>
-            <!-- <el-submenu index="1-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="1-4-1">选项1</el-menu-item>
-            </el-submenu>-->
           </el-submenu>
-          <el-menu-item index="2">
-            <i class="el-icon-menu"></i>
-            <span slot="title">导航二</span>
-          </el-menu-item>
         </el-menu>
       </el-col>
       <!-- 内容 -->
@@ -87,15 +77,15 @@ export default {
       tableData: [
         {
           id: 1,
-          name: "",
-          page: 13,
-          desc: ""
+          name: "道德经",
+          page: 50,
+          desc: "道"
         },
         {
           id: 2,
-          name: "",
-          page: 29,
-          desc: ""
+          name: "笑傲江湖",
+          page: 300,
+          desc: "令狐冲"
         }
       ]
     };
