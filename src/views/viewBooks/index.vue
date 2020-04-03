@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-02 22:18:13
+ * @LastEditTime: 2020-04-03 22:48:34
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -54,12 +54,12 @@
         <!-- 分页 -->
         <div class="block">
           <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
             :current-page="currentPage"
-            :total="200"
-            :page-size="10"
-            :page-sizes="[10, 20, 50, 100]"
+            :total="pageTotal"
+            :page-size="pageSize"
+            :page-sizes="pageSizes"
+            @current-change="handleCurrentChange"
+            @size-change="handleSizeChange"
             layout="total, sizes, prev, pager, next, jumper"
             background
           ></el-pagination>
@@ -87,7 +87,11 @@ export default {
           page: 300,
           desc: "令狐冲"
         }
-      ]
+      ],
+      currentPage: 1, // page start
+      pageTotal: 100,
+      pageSize: 10,
+      pageSizes: [10, 20, 50, 100]
     };
   },
   methods: {
