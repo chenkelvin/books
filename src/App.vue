@@ -1,20 +1,35 @@
+<!--
+ * @Author: kelvin
+ * @Date: 2019-11-24 10:24:05
+ * @LastEditTime: 2020-04-04 21:09:56
+ * @FilePath: /demo/src/App.vue
+ * @Description: 
+ -->
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Sign in</router-link> |
+      <router-link to="/">Sign in</router-link>|
       <router-link to="/register">Register</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,#grayscale");
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  -webkit-filter: grayscale(1);
 }
 
 #nav {
