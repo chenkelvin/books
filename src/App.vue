@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-11-24 10:24:05
- * @LastEditTime: 2020-04-04 21:09:56
+ * @LastEditTime: 2020-04-05 22:44:37
  * @FilePath: /demo/src/App.vue
  * @Description: 
  -->
@@ -22,14 +22,14 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: url("data:image/svg+xml;utf8,#grayscale");
-  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-  -webkit-filter: grayscale(1);
+  //   filter: grayscale(100%);
+  //   -webkit-filter: grayscale(100%);
+  //   -moz-filter: grayscale(100%);
+  //   -ms-filter: grayscale(100%);
+  //   -o-filter: grayscale(100%);
+  //   filter: url("data:image/svg+xml;utf8,#grayscale");
+  //   filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  //   -webkit-filter: grayscale(1);
 }
 
 #nav {
