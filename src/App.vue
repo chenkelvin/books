@@ -1,15 +1,15 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-11-24 10:24:05
- * @LastEditTime: 2020-04-05 22:44:37
+ * @LastEditTime: 2020-04-06 21:29:37
  * @FilePath: /demo/src/App.vue
  * @Description: 
  -->
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Sign in</router-link>|
-      <router-link to="/register">Register</router-link>
+      <router-link to="/">登陆</router-link>|
+      <router-link to="/register">注册</router-link>
     </div>
     <router-view />
   </div>

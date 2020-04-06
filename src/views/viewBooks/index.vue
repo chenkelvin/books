@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-03 22:48:34
+ * @LastEditTime: 2020-04-06 21:30:36
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -10,7 +10,7 @@
   <div class="app-index-layout">
     <el-row>
       <!-- 侧栏 -->
-      <el-col :span="4">
+      <!-- <el-col :span="4">
         <el-radio-group v-model="isCollapse" style="margin-bottom: 20px;">
           <el-radio-button :label="false">展开</el-radio-button>
           <el-radio-button :label="true">收起</el-radio-button>
@@ -37,12 +37,12 @@
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
-      </el-col>
+      </el-col>-->
       <!-- 内容 -->
       <el-col span="20">
         <div class="books-main-layout">
           <el-row></el-row>
-          <h3>books</h3>
+          <h3>书籍</h3>
           <!-- border 边框 -->
           <!-- stripe 带斑马纹 -->
           <el-table :data="tableData" stripe border style="width: 100%;">
@@ -84,6 +84,18 @@ export default {
         {
           id: 2,
           name: "笑傲江湖",
+          page: 300,
+          desc: "令狐冲"
+        },
+        {
+          id: 3,
+          name: "鬼吹灯",
+          page: 300,
+          desc: "令狐冲"
+        },
+        {
+          id: 4,
+          name: "盗墓笔记",
           page: 300,
           desc: "令狐冲"
         }
