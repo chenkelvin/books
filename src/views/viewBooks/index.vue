@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-06 21:30:36
+ * @LastEditTime: 2020-04-07 21:29:01
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -39,7 +39,7 @@
         </el-menu>
       </el-col>-->
       <!-- 内容 -->
-      <el-col span="20">
+      <el-col>
         <div class="books-main-layout">
           <el-row></el-row>
           <h3>书籍</h3>
@@ -53,16 +53,20 @@
         </div>
         <!-- 分页 -->
         <div class="block">
-          <el-pagination
-            :current-page="currentPage"
-            :total="pageTotal"
-            :page-size="pageSize"
-            :page-sizes="pageSizes"
-            @current-change="handleCurrentChange"
-            @size-change="handleSizeChange"
-            layout="total, sizes, prev, pager, next, jumper"
-            background
-          ></el-pagination>
+          <el-row>
+            <el-col align="right">
+              <el-pagination
+                :current-page="currentPage"
+                :total="pageTotal"
+                :page-size="pageSize"
+                :page-sizes="pageSizes"
+                @current-change="handleCurrentChange"
+                @size-change="handleSizeChange"
+                layout="total, sizes, prev, pager, next, jumper"
+                background
+              ></el-pagination>
+            </el-col>
+          </el-row>
         </div>
       </el-col>
     </el-row>
@@ -128,3 +132,8 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+.books-main-layout {
+  padding: 10px;
+}
+</style>
