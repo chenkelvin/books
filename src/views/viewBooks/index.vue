@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-07 21:29:01
+ * @LastEditTime: 2020-04-08 20:48:00
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -134,6 +134,6 @@ export default {
 </script>
 <style lang="scss">
 .books-main-layout {
-  padding: 10px;
+  padding: 10px 0;
 }
 </style>

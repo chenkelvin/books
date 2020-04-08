@@ -1,11 +1,11 @@
 /*
  * @Author: kelvin
  * @Date: 2019-12-26 20:56:51
- * @LastEditTime: 2020-04-01 21:15:09
+ * @LastEditTime: 2020-04-08 21:03:37
  * @FilePath: /demo/vue.config.js
  * @Description: 启动配置
  */
-module.exports = {
+const config = {
     devServer: {
         // 自动打开浏览器
         open: true,
@@ -15,3 +15,4 @@ module.exports = {
         // 以上的ip和端口是我们本机的;下面为需要跨域的
     },
 };
+export default config;

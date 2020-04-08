@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-11-24 10:24:05
- * @LastEditTime: 2020-04-06 21:29:37
+ * @LastEditTime: 2020-04-08 20:47:20
  * @FilePath: /demo/src/App.vue
  * @Description: 
  -->
@@ -30,6 +30,7 @@
   //   filter: url("data:image/svg+xml;utf8,#grayscale");
   //   filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
   //   -webkit-filter: grayscale(1);
+  padding: 10px;
 }
 
 #nav {
