@@ -1,13 +1,27 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-08 20:48:00
+ * @LastEditTime: 2020-04-09 22:25:17
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
 
 <template>
   <div class="app-index-layout">
+    <el-form ref="form" :model="searchForm" label-width="100px">
+      <el-row :gutter="10">
+        <el-col :span="6">
+          <el-form-item label=" ">
+            <el-input v-model="searchForm.bookName" placeholder="书名"></el-input>
+          </el-form-item>
+        </el-col>
+        <el-col :span="6">
+          <el-form-item>
+            <el-button type="primary">搜索</el-button>
+          </el-form-item>
+        </el-col>
+      </el-row>
+    </el-form>
     <el-row>
       <!-- 侧栏 -->
       <!-- <el-col :span="4">
@@ -107,7 +121,11 @@ export default {
       currentPage: 1, // page start
       pageTotal: 100,
       pageSize: 10,
-      pageSizes: [10, 20, 50, 100]
+      pageSizes: [10, 20, 50, 100],
+      searchForm: {
+        // 搜索条件
+        bookName: ""
+      }
     };
   },
   methods: {
