@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-09 22:25:17
+ * @LastEditTime: 2020-04-10 21:13:37
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -23,35 +23,6 @@
       </el-row>
     </el-form>
     <el-row>
-      <!-- 侧栏 -->
-      <!-- <el-col :span="4">
-        <el-radio-group v-model="isCollapse" style="margin-bottom: 20px;">
-          <el-radio-button :label="false">展开</el-radio-button>
-          <el-radio-button :label="true">收起</el-radio-button>
-        </el-radio-group>
-        <el-menu
-          default-active="1-1"
-          class="el-menu-vertical-demo app-left-menu"
-          @open="handleOpen"
-          @close="handleClose"
-          background-color="#545c64"
-          text-color="#fff"
-          active-text-color="#ffd04b"
-          :collapse="isCollapse"
-          align="left"
-        >
-          <el-submenu index="1">
-            <template slot="title">
-              <i class="el-icon-menu"></i>
-              <span>书籍</span>
-            </template>
-            <el-menu-item-group>
-              <el-menu-item index="1-1">古典文学</el-menu-item>
-              <el-menu-item index="1-1">武侠小说</el-menu-item>
-            </el-menu-item-group>
-          </el-submenu>
-        </el-menu>
-      </el-col>-->
       <!-- 内容 -->
       <el-col>
         <div class="books-main-layout">
@@ -91,7 +62,6 @@
 export default {
   data() {
     return {
-      isCollapse: false,
       tableData: [
         {
           id: 1,
@@ -109,7 +79,7 @@ export default {
           id: 3,
           name: "鬼吹灯",
           page: 300,
-          desc: "令狐冲"
+          desc: "胡八一"
         },
         {
           id: 4,
@@ -147,6 +117,9 @@ export default {
     handleCurrentChange() {
       this.$message.warning("改变当前页");
     }
+  },
+  created() {
+    this.initPage();
   }
 };
 </script>
