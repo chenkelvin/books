@@ -1,22 +1,22 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-10 21:13:37
+ * @LastEditTime: 2020-04-11 20:45:58
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
 
 <template>
   <div class="app-index-layout">
-    <el-form ref="form" :model="searchForm" label-width="100px">
+    <el-form ref="form" :model="searchForm">
       <el-row :gutter="10">
         <el-col :span="6">
           <el-form-item label=" ">
             <el-input v-model="searchForm.bookName" placeholder="书名"></el-input>
           </el-form-item>
         </el-col>
-        <el-col :span="6">
-          <el-form-item>
+        <el-col :span="2">
+          <el-form-item class="fl">
             <el-button type="primary">搜索</el-button>
           </el-form-item>
         </el-col>
@@ -83,7 +83,7 @@ export default {
         },
         {
           id: 4,
-          name: "盗墓笔记",
+          name: "不能说的秘密",
           page: 300,
           desc: "令狐冲"
         }

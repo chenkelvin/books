@@ -6,3 +6,7 @@
 .app-left-menu {
     min-height: 50vh;
 }
+
+.fl {
+    float: left;
+}
