@@ -1,7 +1,7 @@
 /*
  * @Author: kelvin
  * @Date: 2019-11-24 10:24:05
- * @LastEditTime: 2020-04-25 23:53:28
+ * @LastEditTime: 2020-04-26 00:10:40
  * @FilePath: /demo/src/router/index.ts
  * @Description: router
  */
@@ -29,6 +29,11 @@ const routes = [
         path: '/books',
         name: 'books',
         component: () => import('./../views/viewBooks/index.vue')
+    },
+    {
+        path: '/piano',
+        name: 'pinao',
+        component: () => import('./../views/viewPiano/piano.vue')
     },
 
 ]
