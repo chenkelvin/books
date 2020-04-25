@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2020-04-11 20:45:58
+ * @LastEditTime: 2020-04-25 23:07:40
  * @FilePath: /demo/src/views/viewBooks/index.vue
  * @Description: 内页
  -->
@@ -17,7 +17,7 @@
         </el-col>
         <el-col :span="2">
           <el-form-item class="fl">
-            <el-button type="primary">搜索</el-button>
+            <el-button type="primary" @click="jumpPiano">搜索</el-button>
           </el-form-item>
         </el-col>
       </el-row>
@@ -116,6 +116,12 @@ export default {
     },
     handleCurrentChange() {
       this.$message.warning("改变当前页");
+    },
+    /**
+     * 钢琴页面
+     */
+    jumpPiano() {
+      this.$router.push("/piano");
     }
   },
   created() {
