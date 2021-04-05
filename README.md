@@ -1,3 +1,10 @@
+<!--
+ * @Author: kelvin
+ * @Date: 2019-11-24 10:24:29
+ * @LastEditTime: 2021-04-05 17:41:59
+ * @FilePath: /viewBooks/README.md
+ * @Description: readme
+-->
 # demo
 
 ## Project setup
@@ -24,6 +31,3 @@ npm run test:unit
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
