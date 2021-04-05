@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-11-24 10:24:29
- * @LastEditTime: 2021-04-05 18:43:46
+ * @LastEditTime: 2021-04-05 19:52:24
  * @FilePath: /viewBooks/src/assets/DevelopmentSpecification.md
  * @Description: 前端开发规范
 -->
@@ -15,7 +15,7 @@
 3、API放在统一的文件夹
 4、fix需要本地拉一个分支，然后push
 5、版本号，小修改第三位加1，新增功能第二位加1，大更新第一位加1（0.001.0001）
-6、vue+vueX+route
+6、vue-cli+vue-router+vuex+axios+elementUI
 ```
 
 ## 代码规范
@@ -156,4 +156,22 @@
             将数据替换为一个计算属性，让其返回过滤后的列表
             调试信息 console.log() debugger 使用完及时删除
             除了三目运算，if 对应的 else 等禁止简写
+```
+
+## Vuex *****
+```
+├── index.html
+├── main.js
+├── api
+│   └── ... # 抽取出API请求
+├── components
+│   ├── App.vue
+│   └── ...
+└── store
+    ├── index.js          # 我们组装模块并导出 store 的地方
+    ├── actions.js        # 根级别的 action
+    ├── mutations.js      # 根级别的 mutation
+    └── modules
+        ├── cart.js       # 购物车模块
+        └── products.js   # 产品模块
 ```
