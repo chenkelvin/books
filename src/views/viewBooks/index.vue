@@ -1,7 +1,7 @@
 <!--
  * @Author: kelvin
  * @Date: 2019-12-17 21:58:19
- * @LastEditTime: 2021-04-06 22:26:46
+ * @LastEditTime: 2021-04-06 22:40:05
  * @FilePath: /viewBooks/src/views/viewBooks/index.vue
  * @Description: 内页
 -->
@@ -133,6 +133,10 @@ export default {
                 path: "/piano",
             });
         },
+        /**
+         * @desc 跳转书籍详情页
+         * GitHub链接太难，经常链接不到，想换掉了。。。
+         */
         jumpToDtl() {
             this.$router.push({
                 path: "/booksDtl",
